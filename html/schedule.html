@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад сеансів | Кінотеатр</title>
+    <link rel="icon" href="../source/siteLogo.png">
+    <link rel="stylesheet" href="../styles/MainMenu.css">
+    <link rel="stylesheet" href="../styles/Image.css">
+    <link rel="stylesheet" href="../styles/Text.css">
+    <link rel="stylesheet" href="../styles/Table.css">
+    <link rel="stylesheet" href="../styles/Buttons.css">
+    <link rel="stylesheet" href="../styles/Other.css">
+    <script type="text/javascript" src="../script/main.js"> </script>
+    <script type="text/javascript" src="../script/main-menu.js"></script>
+    <script type="text/javascript" src="../script/table.js"></script>
+
+
+
+</head>
+
+<body class="body_hide">
+    <header>
+        <table class="menu-links">
+            <tr>
+                <td class="menu-icon"></td> 
+                <td><a href="newMovies.html">Новинки кіно</a></td>
+                <td><a href="index.html">В прокаті</a></td>
+                <td><a href="schedule.html" class="active">Розклад сеансів</a></td>
+                <td><a href="gallery.html">Галерея</a></td>
+                <td><a href="about.html">Про нас</a></td>
+                <td><a href="contacts.html">Контакти</a></td>
+                <td><a href="donat.html">Допомога ЗСУ</a></td>
+                <td id="menu-login"></td>
+            </tr>
+        </table>
+        <ul id="burger-menu">
+            <li><a class="burger-item" href="../html/login.html">Увійти</a></li>
+            <li><a class="burger-item" href="../html/registration.html">Зареєструватись</a></li>
+        </ul>
+    </header>
+    <h2 class="toggle-header">Розклад сеансів</h2>
+    <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
+
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Фільм</th>
+                <th>Час</th>
+            </tr>
+        </thead>
+        <tbody class="schedule">
+            <tr>
+                <td>Додому</td>
+                <td>12:00, 15:00, 18:00</td>
+            </tr>
+            <tr>
+                <td>Аватар 2: Шлях води</td>
+                <td>13:00, 16:00, 19:00</td>
+            </tr>
+            <tr>
+                <td>Мавка: Лісова пісня</td>
+                <td>14:00, 17:00, 20:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+<footer>
+    <p>2023 Кінотеатр. Всі права захищені.</p>
+</footer>
+<noscript>
+    <p>Ваш сайт НЕ підтримує відображення JavaScript, але не засмучуйтесь, вам все одно доступні основні функції сайту!</p>
+    <style>
+        .body_hide{opacity: 1 !important;}; 
+        .toggle-content{display: block;};
+    </style>
+</noscript>
+</body>
+</html>

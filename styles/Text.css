@@ -1,0 +1,48 @@
+h2 {
+    font-family: 'Bad Script', cursive, "Times New Roman";;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 10px;
+    word-spacing: 4px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h2.add{
+    border-top: 3px solid #2c3e50; ;
+}
+h3, h4{
+    text-shadow: 0px 0px 0px rgba(31, 31, 31, 0.315), 0 0 .1em rgb(0, 0, 0);
+}
+
+h2::first-letter{
+    font-size: 30px;
+    color:#3498db;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* #blockInfo1, #blockInfo2, #blockInfo3{
+    opacity: 0;
+    background-color: #3498db;
+    border: #2c3e50;
+    border-radius: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.7s opacity ease-in-out;
+} */
+#block_visible{
+    opacity:1;
+}
+.toggle-content{
+    display: none;
+}
+.toggle-content.active{
+    display: block;
+    width:50%;
+    font-weight: 700;
+    text-decoration: underline;
+    /* background-image: url("../source/sticker2.webp");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    margin-left: 30px;
+    border: #2c3e50;
+    border-radius: 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.7s opacity ease-in-out;
+}

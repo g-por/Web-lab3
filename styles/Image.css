@@ -1,0 +1,41 @@
+li img {
+    width: 150px; 
+    height: 200px;  
+}
+.Gallery img{
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.imgGalleryClients img:hover{
+    box-shadow: 7px 7px 7px rgba(31, 31, 31, 0.315), 0 0 2em #3498db;
+}
+
+.imgGalleryWorkers img:hover{
+    box-shadow: 7px 7px 7px rgba(31, 31, 31, 0.315), 0 0 2em #5e3b00;
+
+}
+.imgGalleryCinema img:hover{
+    box-shadow: 7px 7px 7px rgba(31, 31, 31, 0.315), 0 0 2em #ff0101;
+
+}
+img:hover{
+    cursor: url('../source/cursor.cur'), crosshair;
+}
+.Gallery {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.Gallery li {
+    flex: 0 0 calc(100% / 3);
+    list-style: none;
+}
+
+.imgGalleryClients {
+    width: 600px;
+    overflow: hidden;
+}

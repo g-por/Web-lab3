@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Кінотеатр</title>
+    <link rel="icon" href="../source/siteLogo.png">
+    <link rel="stylesheet" href="../styles/Image.css">
+    <link rel="stylesheet" href="../styles/Text.css">
+    <link rel="stylesheet" href="../styles/Table.css">
+    <link rel="stylesheet" href="../styles/Buttons.css">
+    <link rel="stylesheet" href="../styles/Other.css">
+    <link rel="stylesheet" href="../styles/MainMenu.css">
+    <script type="text/javascript" src="../script/main.js"></script>
+    <script type="text/javascript" src="../script/main-menu.js"></script>
+    <script type="text/javascript" src="../script/carousel.js"></script>
+    <script type="text/javascript" src="../script/new-year-count.js"></script>
+
+</head>
+
+<body class="body_hide">
+    <header>
+        <table class="menu-links">
+            <tr>
+                <td class="menu-icon"></td> 
+                <td><a href="newMovies.html">Новинки кіно</a></td>
+                <td><a href="index.html" class="active">В прокаті</a></td>
+                <td><a href="schedule.html">Розклад сеансів</a></td>
+                <td><a href="gallery.html">Галерея</a></td>
+                <td><a href="about.html">Про нас</a></td>
+                <td><a href="contacts.html">Контакти</a></td>
+                <td><a href="donat.html">Допомога ЗСУ</a></td>
+                <td id="menu-login"></td>
+            </tr>
+        </table>
+        <ul id="burger-menu">
+            <li><a class="burger-item" href="../html/login.html">Увійти</a></li>
+            <li><a class="burger-item" href="../html/registration.html">Зареєструватись</a></li>
+        </ul>
+    </header>
+    <h1>До нового року залишається:</h1>
+    <div id="countdown"></div>
+    <h2 class ="toggle-header">Фільми в прокаті</h2>
+    <div class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</div>
+    <ul class="movies" id="parent-grid">
+        <li class="film-info" id="grid1">
+            <img src="../source/movie1.jpeg" alt="Постер фільму Додому">
+            <h3>Додому</h3>
+            <p>Драма про історію люблячого батька на ім'я Мустафа. Нещодавно він втратив на війні свого старшого сина Назима і хоче поховати його за мусульманськими звичаями. Але для цього йому потрібно доставити тіло назад до Криму. Його молодший син, Алім, погоджується супроводжувати тіло додому.</p>
+            <h4>Сеанси: 12:00, 15:00, 18:00</h4>
+            <h4>Ціна: 150 грн</h4>
+            <a href="https://youtu.be/QvWcUf4pkio?si=-8qNT3x4ARZOmG7A" target="_blank">Трейлер</a>
+        </li>
+        <li class="film-info" id="grid2">
+            <img src="../source/movie2.jpg" alt="Постер фільму Аватар2: Шлях води">
+                <h3>Аватар 2: Шлях води</h3>
+                <p>Фільм "Аватар: Шлях води" демонструє події більш ніж через десять років після першого фільму, і починає розповідати історію сім'ї Саллі (Джейк, Нейтірі та їхні діти), про неприємності, які їх переслідують, про те, на що вони йдуть заради безпеки один одного, про битви, які вони ведуть, щоб залишитися в живих, і про трагедії, які їм доводиться переживати.</p>
+                <h4>Сеанси: 13:00, 16:00, 19:00</h4>
+                <h4>Ціна: 200 грн</h4>
+                <a href="https://youtu.be/1SGVlK5kc0g?si=jkVzwStrvA96Fk5V" target="_blank">Трейлер</a>
+        </li>
+        <li class="film-info" id="grid3">
+            <img src="../source/movie3.png" alt="Постер фільму Мавка: Лісова пісня">
+                <h3>Мавка: Лісова пісня</h3>
+                <p>Історія кохання міфічної лісової царівни Мавки і селянина Лукаша. Хлопець зраджує їхні почуття заради своєї вигоди і за це вищі сили віднімають його єдиний справжній дар – вміння красиво музикувати. Мавці дуже шкода свого коханого, який переживає через це, тому вона повертає йому його здібності, заплативши за це своїм життям.
+                </p>
+                <h4>Сеанси: 14:00, 17:00, 20:00</h4>
+                <h4>Ціна: 250 грн</h4>
+                <a href="https://youtu.be/izQA8C3emt4?si=VfW40n9M01yt0TsN" target="_blank">Трейлер</a>
+        </li>
+    </ul>
+    <button id="prevButton">Попередній</button>
+    <button id="nextButton">Наступний</button>
+    <h2 class="toggle-header">Замовлення квитків</h2>
+    <span class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</span>
+    <form action="#" method="post">
+        <p>Ім'я:</p>
+        <input type="text" id="name" required placeholder="Тетяна">
+
+        <p>Фільм:</p>
+        <select>
+            <option>Додому</option>
+            <option>Аватар 2: Шлях води</option>
+            <option>Мавка: Лісова пісня</option>
+        </select>
+
+        <p>Час:</p>
+        <select>
+            <option>12:00</option>
+            <option>15:00</option>
+            <option>18:00</option>
+        </select>
+
+        <p>Виберіть місце (наприклад, A1, B5 тощо):</p>
+        <input type="text" id="seat-number" required placeholder="В7" >
+
+        <p>Вільні місця: A1, A2, B1, B2, C1...</p>
+        <p>Зайняті місця: B3, B4, C3...</p>
+        
+        <button type="submit" class="submit-button">Замовити</button>
+    </form>
+    <footer>
+        <p>2023 Кінотеатр. Всі права захищені.</p>
+    </footer>
+    <noscript>
+        <p>Ваш сайт НЕ підтримує відображення JavaScript, але не засмучуйтесь, вам все одно доступні основні функції сайту!</p>
+        <style>
+            .body_hide{opacity: 1 !important;}; 
+            .toggle-content{display: block;};
+        </style>
+    </noscript>
+</body>
+</html>

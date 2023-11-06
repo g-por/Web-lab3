@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея | Кінотеатр</title>
+    <link rel="icon" href="../source/siteLogo.png">
+    <link rel="stylesheet" href="../styles/MainMenu.css">
+    <link rel="stylesheet" href="../styles/Image.css">
+    <link rel="stylesheet" href="../styles/Text.css">
+    <link rel="stylesheet" href="../styles/Table.css">
+    <link rel="stylesheet" href="../styles/Buttons.css">
+    <link rel="stylesheet" href="../styles/Other.css">
+    <script type="text/javascript" src="../script/main.js"> </script>
+    <script type="text/javascript" src="../script/main-menu.js"></script>
+    <script type="text/javascript" src="../script/carousel.js"> </script>
+
+
+</head>
+
+<body class="body_hide">
+    <header>
+        <table class="menu-links">
+            <tr>
+                <td class="menu-icon"></td> 
+                <td><a href="newMovies.html">Новинки кіно</a></td>
+                <td><a href="index.html">В прокаті</a></td>
+                <td><a href="schedule.html">Розклад сеансів</a></td>
+                <td><a href="gallery.html" class="active">Галерея</a></td>
+                <td><a href="about.html">Про нас</a></td>
+                <td><a href="contacts.html">Контакти</a></td>
+                <td><a href="donat.html">Допомога ЗСУ</a></td>
+                <td id="menu-login"></td>
+            </tr>
+        </table>
+        <ul id="burger-menu">
+            <li><a class="burger-item" href="../html/login.html">Увійти</a></li>
+            <li><a class="burger-item" href="../html/registration.html">Зареєструватись</a></li>
+        </ul>
+    </header>
+    <h2 class="toggle-header"> Наші відвідувачи: </h2>
+    <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
+    <div class="wrapper">
+        <div class="btn" id="btn-left">←</div>
+        <div class="carousel-wrapper" id="carousel-wrapper">
+            <div class="imgGalleryClients" id="carousel">
+                <ul class="Gallery">
+                    <li class="card"><img src="../source/visitors1.jpg" alt="фото відвідувачів"></li>
+                    <li class="card"><img src="../source/visitors2.webp" alt="фото відвідувачів"></li>
+                    <li class="card"><img src="../source/visitors3.jpg" alt="фото відвідувачів"></li>
+                    <li class="card"><img src="../source/visitors4.jpg" alt="фото відвідувачів"></li>
+                    <li class="card"><img src="../source/visitors5.jpg" alt="фото відвідувачів"></li>
+                    <li class="card"><img src="../source/visitors6.jpg" alt="фото відвідувачів"></li>
+                    <li class="card"><img src="../source/visitors7.webp" alt="фото відвідувачів"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn" id="btn-right">→</div>
+    </div>
+    
+    <h2 class="toggle-header"> Наші працівники: </h2>
+    <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
+
+    <div class="imgGalleryWorkers">
+        <ul class="Gallery">
+            <li><img src="../source/workers1.jpg" alt="фото працівників"></li>
+            <li><img src="../source/workers2.jpg" alt="фото працівників"></li>
+            <li><img src="../source/workers3.jpg" alt="фото працівників"></li>
+            <li><img src="../source/workers4.jpg" alt="фото працівників"></li>
+            <li><img src="../source/workers5.jpg" alt="фото працівників"></li>
+            <li><img src="../source/workers6.jpg" alt="фото працівників"></li>
+        </ul>
+    </div>
+    <h2 class="toggle-header">Кінотеатр: </h2>
+    <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
+
+    <div class="imgGalleryCinema">
+        <ul class="Gallery">
+            <li><img src="../source/cinema4.webp" alt="фото кінотеатра"></li>
+            <li><img src="../source/cinema2.webp" alt="фото кінотеатра"></li>
+            <li><img src="../source/cinema3.jpg" alt="фото кінотеатра"></li>
+            <li><img src="../source/cinema1.jpg" alt="фото кінотеатра"></li>
+        </ul>
+    </div>
+<footer>
+    <p>2023 Кінотеатр. Всі права захищені.</p>
+</footer>
+<noscript>
+    <p>Ваш сайт НЕ підтримує відображення JavaScript, але не засмучуйтесь, вам все одно доступні основні функції сайту!</p>
+    <style>
+        .body_hide{opacity: 1 !important;}; 
+        .toggle-content{display: block;};
+    </style>
+</noscript>
+</body>
+</html>
