@@ -18,5 +18,5 @@ function updateCountdown() {
     }
 }
 
-setInterval(updateCountdown, 1000); // Оновлюємо відлік кожну секунду
-updateCountdown(); // Оновлення відліку при завантаженні сторінки
+setInterval(updateCountdown, 1000);
+updateCountdown();

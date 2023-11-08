@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const headers = document.querySelectorAll('.toggle-header');
-    headers.forEach(header=>{header.addEventListener('click', () => {
+    const titles = document.querySelectorAll('.toggle-header');
+    titles.forEach(header=>{header.addEventListener('click', () => {
         const content = header.nextElementSibling; 
         content.classList.toggle('active')} 
         )
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 setTimeout(function(){
-    document.body.classList.add('body_visible');}, 25);
+    document.body.classList.add('body_visible');}, 500);
 
 
 document.addEventListener('keydown', function(event){  

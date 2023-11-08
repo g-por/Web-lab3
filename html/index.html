@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../styles/Buttons.css">
     <link rel="stylesheet" href="../styles/Other.css">
     <link rel="stylesheet" href="../styles/MainMenu.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+
     <script type="text/javascript" src="../script/main.js"></script>
     <script type="text/javascript" src="../script/main-menu.js"></script>
     <script type="text/javascript" src="../script/carousel.js"></script>
@@ -32,14 +34,53 @@
             </tr>
         </table>
         <ul id="burger-menu">
-            <li><a class="burger-item" href="../html/login.html">Увійти</a></li>
+            <li><a class="burger-item" href="#">Увійти</a></li>
             <li><a class="burger-item" href="../html/registration.html">Зареєструватись</a></li>
         </ul>
     </header>
-    <h1>До нового року залишається:</h1>
+    <h1 class="new-year">До нового року залишається:</h1>
     <div id="countdown"></div>
+
     <h2 class ="toggle-header">Фільми в прокаті</h2>
     <div class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</div>
+
+
+
+    <div class="carousel-3d" data-gap="20" data-bfc>
+        <figure>
+            <div><img class="car-image" src="../source/dodomu1.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/dodomu2.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/dodomu3.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/dodomu4.jpg" alt="фото працівників"></div>
+
+            <div><img class="car-image" src="../source/avatar1.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar2.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar3.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar4.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar5.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar6.webp" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar7.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar8.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/avatar9.jpg" alt="фото працівників"></div>
+
+            <div><img class="car-image" src="../source/mavka1.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka2.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka3.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka4.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka5.png" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka6.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka7.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka8.jpg" alt="фото працівників"></div>
+            <div><img class="car-image" src="../source/mavka9.jpg" alt="фото працівників"></div>
+        </figure>
+        <nav>
+            <button class="nav prev" id="prevButton">Назад</button>
+
+            <button class="nav next" id="nextButton">Вперед</button>
+        </nav>
+    </div>
+
+
     <ul class="movies" id="parent-grid">
         <li class="film-info" id="grid1">
             <img src="../source/movie1.jpeg" alt="Постер фільму Додому">

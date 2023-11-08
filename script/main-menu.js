@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('header');
     const menuToggle = document.getElementById('menu-toggle');
     const closeMenu = document.getElementById('close-menu');
-    const body = document.body;
 
     function openBurgerMenu() {
         burgerMenu.classList.add('active');

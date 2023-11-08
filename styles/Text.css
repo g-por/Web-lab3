@@ -18,14 +18,14 @@ h2::first-letter{
     color:#3498db;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-/* #blockInfo1, #blockInfo2, #blockInfo3{
+#blockInfo1, #blockInfo2, #blockInfo3{
     opacity: 0;
     background-color: #3498db;
     border: #2c3e50;
     border-radius: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.7s opacity ease-in-out;
-} */
+}
 #block_visible{
     opacity:1;
 }
@@ -37,12 +37,25 @@ h2::first-letter{
     width:50%;
     font-weight: 700;
     text-decoration: underline;
-    /* background-image: url("../source/sticker2.webp");
-    background-size: cover;
-    background-repeat: no-repeat; */
     margin-left: 30px;
     border: #2c3e50;
     border-radius: 4px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.7s opacity ease-in-out;
+}
+#success-message{
+    display: none; 
+    color: green; 
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.valid-name{
+    margin: 0px;
+    font-size: 17px;
+}
+.valid-input{
+    margin: 0px;
+
 }

@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="../styles/Table.css">
     <link rel="stylesheet" href="../styles/Buttons.css">
     <link rel="stylesheet" href="../styles/Other.css">
+    <link rel="stylesheet" href="../styles/slider.css">
     <script type="text/javascript" src="../script/main.js"> </script>
     <script type="text/javascript" src="../script/main-menu.js"></script>
-    <script type="text/javascript" src="../script/carousel.js"> </script>
+    <!-- <script type="text/javascript" src="../script/carousel.js"> </script> -->
 
 
 </head>
@@ -32,17 +33,17 @@
             </tr>
         </table>
         <ul id="burger-menu">
-            <li><a class="burger-item" href="../html/login.html">Увійти</a></li>
+            <li><a class="burger-item" href="#">Увійти</a></li>
             <li><a class="burger-item" href="../html/registration.html">Зареєструватись</a></li>
         </ul>
     </header>
     <h2 class="toggle-header"> Наші відвідувачи: </h2>
     <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
-    <div class="wrapper">
-        <div class="btn" id="btn-left">←</div>
-        <div class="carousel-wrapper" id="carousel-wrapper">
-            <div class="imgGalleryClients" id="carousel">
-                <ul class="Gallery">
+    <div id="carousel" class="carousel">
+        <button class="arrow prev">⇦</button>
+        <div class="gallery">
+
+        <ul class="Gallery">
                     <li class="card"><img src="../source/visitors1.jpg" alt="фото відвідувачів"></li>
                     <li class="card"><img src="../source/visitors2.webp" alt="фото відвідувачів"></li>
                     <li class="card"><img src="../source/visitors3.jpg" alt="фото відвідувачів"></li>
@@ -52,10 +53,40 @@
                     <li class="card"><img src="../source/visitors7.webp" alt="фото відвідувачів"></li>
                 </ul>
             </div>
+            <button class="arrow next">⇨</button>
         </div>
-        <div class="btn" id="btn-right">→</div>
-    </div>
-    
+<script>
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+      li.style.position = 'relative';
+      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+      i++;
+    }
+
+    /* конфигурация */
+    let width = 900; // ширина картинки
+    let count = 3; // видимое количество изображений
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0; // положение ленты прокрутки
+
+    carousel.querySelector('.prev').onclick = function() {
+      // сдвиг влево
+      position += width * count;
+      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+      position = Math.min(position, 0)
+      list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.next').onclick = function() {
+      // сдвиг вправо
+      position -= width * count;
+      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+      position = Math.max(position, -width * (listElems.length - count));
+      list.style.marginLeft = position + 'px';
+    };</script>
     <h2 class="toggle-header"> Наші працівники: </h2>
     <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
 

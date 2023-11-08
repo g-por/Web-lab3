@@ -7,10 +7,21 @@
     padding: 8px 20px; 
     font-size: large; 
 }
-
-.submit-button:hover {
+.submit-button:disabled{
+    background-color:lightgray;
+    color: #999;
+    border-radius: 5px;
+    width: 20%;
+    margin-bottom: 20px; 
+    padding: 8px 20px; 
+    font-size: large; 
+}
+.submit-button:hover:enabled {
     background-color: #2980b9;
-    cursor: grab;
+    cursor: pointer;
+}
+.valid-button{
+    width: 20%;
 }
 
 

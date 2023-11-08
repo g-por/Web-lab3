@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Галерея | Кінотеатр</title>
@@ -9,62 +10,66 @@
     <link rel="stylesheet" href="../styles/Table.css">
     <link rel="stylesheet" href="../styles/Buttons.css">
     <link rel="stylesheet" href="../styles/Other.css">
-    <script type="text/javascript" src="../script/main.js"> </script>
+    <script type="text/javascript" src="../script/main.js"></script>
     <script type="text/javascript" src="../script/main-menu.js"></script>
-    <script type="text/javascript" src="../script/carousel.js"> </script>
-
-
+    <script type="text/javascript" src="../script/validation.js"></script>
 </head>
 
 <body class="body_hide">
     <header>
-      <table class="menu-links">
-        <tr>
-            <td class="menu-icon"></td> 
-            <td><a href="newMovies.html">Новинки кіно</a></td>
-            <td><a href="index.html">В прокаті</a></td>
-            <td><a href="schedule.html">Розклад сеансів</a></td>
-            <td><a href="gallery.html">Галерея</a></td>
-            <td><a href="about.html">Про нас</a></td>
-            <td><a href="contacts.html">Контакти</a></td>
-            <td><a href="login.html" class="active">Реєстрація</a></td> 
-            <td><a href="donat.html">Допомога ЗСУ</a></td>
-            <td id="menu-login"></td>
-        </tr>
-    </table>
-    
+        <table class="menu-links">
+            <tr>
+                <td class="menu-icon"></td>
+                <td><a href="newMovies.html">Новинки кіно</a></td>
+                <td><a href="index.html">В прокаті</a></td>
+                <td><a href="schedule.html">Розклад сеансів</a></td>
+                <td><a href="gallery.html">Галерея</a></td>
+                <td><a href="about.html">Про нас</a></td>
+                <td><a href="contacts.html">Контакти</a></td>
+                <td><a href="login.html" class="active">Реєстрація</a></td>
+                <td><a href="donat.html">Допомога ЗСУ</a></td>
+                <td id="menu-login"></td>
+            </tr>
+        </table>
+
         <ul id="burger-menu">
             <li><a class="burger-item" href="../html/login.html">Увійти</a></li>
-            <!-- <li><a class="burger-item" href="../html/registration.html">Зареєструватись</a></li> -->
         </ul>
     </header>
     <h2 class="toggle-header">Реєстрація</h2>
     <p class="toggle-content"> Це заголовок h2, він допоможе вам в навігації по сторінці</p>
 
-    <form action="#" method="post">
-      <label for="phone">Номер телефону:</label>
-      <input type="tel" id="phone" name="phone"  required placeholder="+380*********">
-      
-      <label for="email">Електронна пошта:</label>
-      <input type="email" id="email" name="email"  required placeholder="example@gmail.com">
-      
-      <label for="full-name">Ім'я:</label>
-      <input type="text" id="name" required placeholder="Тетяна">
-      <label for="password">Пароль:</label>
-      <input type="password" id="password" name="password" required placeholder="Пароль">
-      <label for="confirm-password">Підтвердити пароль:</label>
-      <input type="password" id="confirm-password" name="confirm-password" required placeholder="Підтвердити пароль">
-    
-      <label for="city">Місто:</label>
-      <select id="city" name="city">
-          <option value="Київ">Київ</option>
-          <option value="Харків">Харків</option>
-          <option value="Львів">Львів</option>
-          <!-- Додайте інші українські міста за потребою -->
-      </select>
-      
-      <button type="submit" class="submit-button">Зареєструватись</button>
+    <form action="#" method="post" id="myForm">
+        <label for="full-name" class="valid-name">Ім'я:</label>
+        <input type="text" id="firstName" class="valid-input" required placeholder="Тетяна">
+        <div id="name-error" class="error-div"></div>
+
+
+        <label for="email" class="valid-name">Електронна пошта:</label>
+        <input type="email" id="email" name="email" class="valid-input" required placeholder="example@gmail.com">
+        <button type="button" id="email-validation-button" class="valid-button">Перевірити пошту</button>
+        <div id="email-error"class="error-div"></div>
+
+        <label for="phone"class="valid-name">Номер телефону:</label>
+        <input type="tel" id="phone" name="phone" class="valid-input" required placeholder="+380*********">
+        <button type="button" id="phone-validation-button" class="valid-button">Перевірити телефон</button>
+        <div id="phone-error"class="error-div"></div>
+
+        <label for="password" class="valid-name">Пароль:</label>
+        <input type="password" id="password" name="password" class="valid-input" required placeholder="Пароль">
+        <div id="password-error"class="error-div"></div>
+
+        <label for="confirm-password" class="valid-name">Підтвердити пароль:</label>
+        <input type="password" id="confirm-password" class="valid-input" required placeholder="Підтвердити пароль">
+        <div id="password-metch-error" class="error-div"></div>
+
+
+        <button type="submit" id="register-button" class="submit-button" disabled >Зареєструватись</button>
+        <div id="success-message">Реєстрація пройшла вдало!</div>
     </form>
-  
-    </body>
-    </html>
+    <footer>
+        <p>2023 Кінотеатр. Всі права захищені.</p>
+    </footer>
+</body>
+
+</html>

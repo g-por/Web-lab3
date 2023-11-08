@@ -118,31 +118,6 @@ tr:nth-child(even) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wrapper {
     display: flex;
     align-items: center;
@@ -152,7 +127,6 @@ tr:nth-child(even) {
     cursor: pointer;
     font-size: 100px;
     width: 100px;
-   
   }
   
   .item, .carousel, .card {
